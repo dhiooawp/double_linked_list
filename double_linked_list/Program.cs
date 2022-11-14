@@ -6,6 +6,7 @@ using System.Security;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml;
 using System.Xml.Serialization;
 
 namespace double_linked_list
@@ -136,6 +137,36 @@ namespace double_linked_list
                 {
                     Console.Write(currentNode.noMhas + "" + currentNode.name + "\n");
                     currentNode = currentNode.prev;
+                }
+            }
+        }
+    }
+    class program
+    {
+        static void main(string[] args)
+        {
+            DoubleLinkedList obj = new DoubleLinkedList();
+            while (true)
+            {
+                try
+                {
+                    Console.WriteLine("\nMenu");
+                    Console.WriteLine("1. Add a record to the list");
+                    Console.WriteLine("2. Delete a record from the list");
+                    Console.WriteLine("3. View all record in the ascending order roll of numbers");
+                    Console.WriteLine("4. View all record in the descending order roll of numbers");
+                    Console.WriteLine("5. Search for a record in the list");
+                    Console.WriteLine("6. Exit\n");
+                    Console.Write("Enter your choice (1 - 6): ");
+                    char ch = Convert.ToChar(Console.ReadLine());
+                    switch (ch)
+                    {
+                        case '1':
+                            {
+                                obj.addNode();
+                            }
+                            break;
+                    }
                 }
             }
         }
