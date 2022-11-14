@@ -182,6 +182,11 @@ namespace double_linked_list
                                     Console.WriteLine("Record with roll number" + rollNo + "Deleted\n");
                             }
                             break;
+                        case '3':
+                            {
+                                obj.ascending();
+                            }
+                            break;
                     }
                 }
             }
