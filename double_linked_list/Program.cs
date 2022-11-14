@@ -80,7 +80,6 @@ namespace double_linked_list
         }
         public bool dellNode(int rollNo)
         {
-
         }
     }
 }
