@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -53,6 +54,28 @@ namespace double_linked_list
                 START = newNode;
                 return;
             }
+            Node previous, current;
+            for (current = previous = START; current != null && nim >= current.noMhas; previous= current, current = current.next)
+            {
+                if (nim == current.noMhas)
+                {
+                    Console.WriteLine("\nDuplicate roll numbers not allowed");
+                    return;
+                }
+            }
+            newNode.next = current;
+            newNode.prev = previous;
+
+            if (current == null)
+            {
+                newNode.next = null;
+                newNode.next = newNode;
+                return;
+            }
+        }
+        public bool Search(int rollNo, ref Node previous, ref Node current)
+        {
+            for
         }
     }
 }
