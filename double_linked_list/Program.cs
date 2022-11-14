@@ -28,5 +28,10 @@ namespace double_linked_list
         {
             START = null;
         }
+        public void addNode()
+        {
+            int nim;
+            string nm;
+        }
     }
 }
