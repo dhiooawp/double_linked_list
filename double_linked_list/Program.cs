@@ -6,6 +6,7 @@ using System.Security;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Serialization;
 
 namespace double_linked_list
 {
@@ -118,6 +119,24 @@ namespace double_linked_list
                 Node currentNode;
                 for (currentNode = START; currentNode != null; currentNode = currentNode.next)
                     Console.Write(currentNode.noMhas + "" + currentNode.name + "\n");
+            }
+        }
+        public void descending()
+        {
+            if(listEmpty())
+                Console.WriteLine("\nList is empty");
+            else
+            {
+                Console.WriteLine("\nRecord in the Descending order of" + "roll number are:\n");
+                Node currentNode;
+                for(currentNode = START; currentNode != null; currentNode = currentNode.next)
+                { }
+
+                while(currentNode != null)
+                {
+                    Console.Write(currentNode.noMhas + "" + currentNode.name + "\n");
+                    currentNode = currentNode.prev;
+                }
             }
         }
     }
