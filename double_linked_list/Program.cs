@@ -78,6 +78,9 @@ namespace double_linked_list
             for (previous = current = START; current != null && rollNo != current.noMhas; previous = current, current = current.next) { }
             return (current != null);
         }
+        public bool dellNode(int rollNo)
+        {
 
+        }
     }
 }
