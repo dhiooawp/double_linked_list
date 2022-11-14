@@ -20,4 +20,13 @@ namespace double_linked_list
         //Point to preceeding node
         public Node prev;
     }
+
+    class DoubleLinkedList
+    {
+        Node START;
+        public DoubleLinkedList()
+        {
+            START = null;
+        }
+    }
 }
