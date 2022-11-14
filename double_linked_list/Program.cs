@@ -181,6 +181,7 @@ namespace double_linked_list
                                 else
                                     Console.WriteLine("Record with roll number" + rollNo + "Deleted\n");
                             }
+                            break;
                     }
                 }
             }
