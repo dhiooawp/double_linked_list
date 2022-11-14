@@ -15,5 +15,9 @@ namespace double_linked_list
          * in terms of the next and previous*/
         public int noMhas;
         public string name;
+        //Point to succeding node
+        public Node next;
+        //Point to preceeding node
+        public Node prev;
     }
 }
