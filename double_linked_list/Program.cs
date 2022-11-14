@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
+using System.Security;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
@@ -106,6 +107,18 @@ namespace double_linked_list
                 return true;
             else
                 return false;
+        }
+        public void ascending()
+        {
+            if(listEmpty())
+                Console.WriteLine("\nList is Empty");
+            else
+            {
+                Console.WriteLine("\nReceord in the ascending order of" + "roll number are:\n");
+                Node currentNode;
+                for (currentNode = START; currentNode != null; currentNode = currentNode.next)
+                    Console.Write(currentNode.noMhas + "" + currentNode.name + "\n");
+            }
         }
     }
 }
